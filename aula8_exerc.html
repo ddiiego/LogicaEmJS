@@ -18,16 +18,19 @@
          njogador2 = parseInt(njogador2)
          //se for iguais, mostrar mansagem 'empate'
          var sorteio = parseInt(Math.random()*2); 
-           switch(njogador1, njogador2){
-                case njogador1 === njogador2:
+           /* switch(sorteio,njogador2, njogador1){
+                case (njogador1 === njogador2):
                     alert("Empate");
                     break;
-                case njogador1 > 0:
-                    alert("jogador 2 ganha!")
+                case (njogador1 > 0):
+                    alert("jogador 20 ganha!")
                     break;
-                case njogador2 > 0:
-                    alert("jogador 1 ganha!")
-           }
+                case (njogador2 > 0):
+                    alert("jogador 11 ganha!")
+                default:
+                    alert("gggggggg")
+           } */
+           
            
          //sortear um numero entre 0 e 1
              
@@ -35,7 +38,13 @@
               
         //se o numero sorteado for 1, ganha quem escolheu o número MAOIR
           
-         
+        if((sorteio === 0 && njogador1 < njogador2) || 
+        (sorteio === 1 && njogador1 > njogador2)){
+            alert("Ganha o jogador 1");
+        } else {
+            alert("Ganha o jogador 2")
+        }
+        
         </script>
     </body>
 </html> 
