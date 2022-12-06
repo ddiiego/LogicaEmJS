@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Lógica de Programação Javascript</title>
+        <meta charset="utf-8">
+
+
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <div id="output"></div>
+        <script>
+           var teclado = new Object();
+            teclado.nome = 'preto';
+            teclado.preco = 2.50;
+            teclado.estoque = 10;
+
+             var msg = '';
+
+             msg += 'nome: ' + teclado.nome + '<br>';
+             msg += 'preco: ' + teclado.preco + '<br>';
+             msg += 'estoque: ' + teclado.estoque + '<br>';
+            
+             document.querySelector('#output').innerHTML = msg;
+
+           
+           
+        </script>
+    </body>
+</html> 

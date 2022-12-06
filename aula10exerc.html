@@ -19,7 +19,7 @@
         <script>
 
             var n1 = prompt('Digite um número');
-            parseFloat(n1);
+            n1 = parseFloat(n1);
             escrever();
 
             function escrever(){
@@ -29,8 +29,8 @@
 
             function somar(){
                 var n2 = prompt('Digite um Número');
-                parseFloat(n2);
-                n1 = n1 + n2;
+               n2 = parseFloat(n2);
+                n1 += n2;
                 escrever();
             }
 

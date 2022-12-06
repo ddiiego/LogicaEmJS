@@ -28,7 +28,12 @@
             var n2 = prompt('digite outro número...');
             n2 = parseFloat(n2);
 
-            var msg = calcular(simbolo, n1, n2);
+            try{
+                var msg = calcular(simbolo, n1, n2);
+            } catch(e){
+                alert(e);
+                return;
+            }
 
             escreve(msg);
  
@@ -46,8 +51,7 @@
             }
 
             if(isNaN(n1) || isNaN(n2)){
-                alert('chama passando somente numeros')
-                return 0;
+                throw new Error('chama passando somente numeros')
             }
 
             var numeroCalculado = null;
@@ -70,4 +74,4 @@
            }
         </script>
     </body>
-</html> 
+</html>
